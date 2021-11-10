@@ -17,11 +17,29 @@ Write a program in Python that ingests a json (sample-json.json), and generates 
 
 Check the 3 sets of samples in Question_1_Example_Images for reference. The dimensions of the original image were 3840 × 2160.
 
+## Solution 1
+```
+python Solution_1.py --source sample-json.json --save_path Question_1_Outputs
+```
+
+The outputs will be saved in ```Question_1_Outputs```. In ```output_1.jpg```, colors are based on shape types. In ```output_2.jpg```, colors are based on label types. ```results.json``` includes all the required and necessary information:
+
+- number of unique shape
+- frequency of unique label-shape pair
+- color map for output_1
+- color map for output_2
+
 
 ## Exercise 2 (Code review and Bug fix)
 
 The python script "Question_2.py" is used to identify corrupt images in a folder. The user reports that the script is running incorrectly, and they are not sure what is causing the error. The folder they are running the script on is "Question_2_Images". Given the python script and 1 sample corrupt image (indexed_5d5da9038aa716043cb777f4_0e2ee618-dab5-48c1-b13f-13ca3f8326e6.png), can you diagnose and fix the error(s)?
 
+## Solution 2
+```
+python Solution_2.py Question_2_Images/
+```
+
+The list of corrupt images will be saved in ```Question_2_Images_reporting.csv```
 
 ## General instructions
 
